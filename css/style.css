@@ -7,18 +7,25 @@
     font-family: 'Poppins', sans-serif;
 }
 
-   #hero {
-    width: 100%;
-    height: 100vh;
-    background: url("/assets/img/foto.jpg") top center;
-    background-size: cover;
-    position: relative;
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url("/assets/img/foto.jpg") top center;
+  background-size: cover;
+  position: relative;
+}
+
+/* Verberg de hero-sectie voor schermen kleiner dan 1200px */
+@media (max-width: 1200px) {
+  #hero {
+    display: none !important;
   }
+}
   
   #hero:before {
     content: "";
     background: rgba(5, 13, 24, 0.3);
-    position: absolute;
+    position: relative;
     bottom: 0;
     top: 0;
     left: 0;
@@ -162,33 +169,37 @@
       color: #fff;
       text-decoration: none;
     } 
-  .mobile-nav-toggle {
-    position: fixed;
-    right: 15px;
-    top: 15px;
-    z-index: 9998;
-    border: 0;
-    font-size: 24px;
-    transition: all 0.4s;
-    outline: none !important;
-    background-color: #149ddd;
-    color: #fff;
-    width: 40px;
-    height: 40px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 0;
-    border-radius: 50px;
-    cursor: pointer;
-  }
-  
-  .mobile-nav-active {
-    overflow: hidden;
-  }
-  
-  .mobile-nav-active .custom-sidebar a:hover {
-    left: 0;
+/* Mobile Navigation */
+.mobile-nav-toggle {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  z-index: 9998;
+  border: 0;
+  font-size: 24px;
+  transition: all 0.4s;
+  outline: none !important;
+  background-color: #149ddd;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: inline-flex; 
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+}
+
+.mobile-nav-active #header {
+  left: 0;
+}
+  .nav.flex-column.text-center {
+    padding-left: 0; 
   }
   
   .nav.flex-column.text-center {
@@ -273,32 +284,29 @@
       padding-right: 20px 15px;
     }
   } 
-  resume .resume-title {
-    font-size: 26px;
-    font-weight: 700;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: #050d18;
-  }
+
   
-  .stage .stage-item {
+  .stage .stage-item,
+  .Werkervaring .werkervaring-item {
     padding: 0 0 20px 20px;
     margin-top: -2px;
     border-left: 2px solid #1f5297;
     position: relative;
   }
   
-    .stage .stage-item h4 {
-      line-height: 18px;
-      font-size: 18px;
-      font-weight: 600;
-      text-transform: uppercase;
-      font-family: "Poppins", sans-serif;
-      color: #050d18;
-      margin-bottom: 10px;
-    }
+  .stage .stage-item h4,
+  .Werkervaring .Werkervaring-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #050d18;
+    margin-bottom: 10px;
+  }
   
-  .stage .stage-item h5 {
+  .stage .stage-item h5,
+  .Werkervaring .Werkervaring-item h5 {
     font-size: 16px;
     background: #e4edf9;
     padding: 5px 15px;
@@ -306,9 +314,9 @@
     font-weight: 600;
     margin-bottom: 10px;
   }
-
   
-  .stage .stage-item::before {
+  .stage .stage-item::before,
+  .Werkervaring .Werkervaring-item::before {
     content: "";
     position: absolute;
     width: 16px;
@@ -319,6 +327,7 @@
     background: #fff;
     border: 2px solid #1f5297;
   }
+  
 
   .skills .progress {
     height: 60px;
@@ -338,29 +347,29 @@
     margin-bottom: 30px;
   }
 /*   
-  .projecten #projecten-flters {
-    padding: 0;
-    margin: 0 auto 35px auto;
-    list-style: none;
-    text-align: center;
-    background: #fff;
-    border-radius: 50px;
-    padding: 2px 15px;
-  } */
-  
-  /* .projecten #projecten-flters li {
-    cursor: pointer;
-    display: inline-block;
-    padding: 10px 15px 8px 15px;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 1;
-    text-transform: uppercase;
-    color: #272829;
-    margin-bottom: 5px;
-    transition: all 0.3s ease-in-out;
-  }
-   */
+    /* .projecten #projecten-flters {
+      padding: 0;
+      margin: 0 auto 35px auto;
+      list-style: none;
+      text-align: center;
+      background: #fff;
+      border-radius: 50px;
+      padding: 2px 15px;
+    } */
+    
+    /* .projecten #projecten-flters li {
+      cursor: pointer;
+      display: inline-block;
+      padding: 10px 15px 8px 15px;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1;
+      text-transform: uppercase;
+      color: #272829;
+      margin-bottom: 5px;
+      transition: all 0.3s ease-in-out;
+    }
+    */ */
   .projecten #projecten-flters li:hover,
   .projecten #projecten-flters li.filter-active {
     color: #149ddd;
@@ -434,13 +443,13 @@
 
   .projecten-item .projecten-wrap {
     position: relative;
-    overflow: hidden; /* Verborgen overloop om afbeeldingen bij te snijden */
+    overflow: hidden; /
   }
   
   .projecten-item .projecten-wrap img {
-    width: 100%; /* Zorg ervoor dat de afbeeldingen de volledige breedte van de container innemen */
-    height: 100%; /* Maak alle afbeeldingen dezelfde hoogte */
-    object-fit: cover; /* Zorg ervoor dat de afbeeldingen passend worden bijgesneden */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
   }
   
   
