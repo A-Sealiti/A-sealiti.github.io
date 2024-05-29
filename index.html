@@ -11,20 +11,24 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
-      defer></script>
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">defer</script>
     <link rel="stylesheet" href="/css/style.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/isotope/3.0.6/isotope.pkgd.min.js">defer</script>
+    <script src="https://unpkg.com/glightbox/dist/js/glightbox.min.js">defer</script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js">defer</script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js">defer</script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"> defer</script>
 
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
       rel="stylesheet">
-  </head>
+  </head> 
 
     <body>
       <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-      <header>
+      <header class="sticky-top">
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-3 col-lg-2 custom-sidebar">
@@ -40,6 +44,7 @@
                     class="snapchat"><i class="bi bi-snapchat"></i></a>
                   <a href="https://www.linkedin.com/in/abdel-sealiti-5582b7237?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                     class="linkedin"><i class="bi bi-linkedin"></i></a>
+
                 </div>
               </div>
 
@@ -77,12 +82,12 @@
           </div>
         </div>
     </header>
-    <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <section id="hero" class="d-flex flex-column justify-content-center align-items-center text-light">
       <div class="hero-container" data-aos="fade-in">
-        <h1>Abdel~sealiti</h1>
-        <p>I'm <span class="typed" data-typed-items="Developer, IT Medewerker, Student"></span></p>
+          <h1>Abdel~sealiti</h1>
+          <p>I'm <span class="typed" data-typed-items="Developer, IT Medewerker, Student"></span></p>
       </div>
-    </section>
+  </section>
   <div class="col-md-9 col-lg-10 offset-md-3 offset-lg-2">
     <main class="container-fluid">
       <section id="about" class="my-5">
@@ -143,14 +148,14 @@
             <div class="col-lg-6" data-aos="fade-up">
 
               <div class="progress mb-3">
-                <div class="skill">HTML <span class="val float-end">90%</span></div>
-                <div class="progress-bar bg-info" role="progressbar" style="width: 90%" aria-valuenow="90"
+                <div class="skill">HTML <span class="val float-end">65%</span></div>
+                <div class="progress-bar bg-info" role="progressbar" style="width: 65%" aria-valuenow="65"
                   aria-valuemin="0" aria-valuemax="100"></div>
               </div>
 
               <div class="progress mb-3">
-                <div class="skill">CSS <span class="val float-end">90%</span></div>
-                <div class="progress-bar bg-info" role="progressbar" style="width: 90%" aria-valuenow="90"
+                <div class="skill">CSS <span class="val float-end">70%</span></div>
+                <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="70"
                   aria-valuemin="0" aria-valuemax="100"></div>
               </div>
 
@@ -164,14 +169,10 @@
 
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
 
-              <div class="progress mb-3">
-                <div class="skill">PHP <span class="val float-end">10%</span></div>
-                <div class="progress-bar bg-info" role="progressbar" style="width: 10%" aria-valuenow="10"
-                  aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+            
 
               <div class="progress mb-3">
-                <div class="skill">WordPress/CMS <span class="val float-end">60%</span></div>
+                <div class="skill">bootstrap <span class="val float-end">60%</span></div>
                 <div class="progress-bar bg-info" role="progressbar" style="width: 60%" aria-valuenow="60"
                   aria-valuemin="0" aria-valuemax="100"></div>
               </div>
@@ -265,53 +266,53 @@
       <div class="col-lg-12 d-flex justify-content-center">
         <ul id="projecten-flters" class="list-unstyled d-flex">
           <li data-filter="*" class="filter-active btn btn-outline-primary mx-2">All</li>
-          <li data-filter=".filter-allen" class="btn btn-outline-primary mx-2">allen</li>
-          <li data-filter=".filter-samen" class="btn btn-outline-primary mx-2">samen</li>
+          <li data-filter=".filter-Allen" class="btn btn-outline-primary mx-2">Allen</li>
+          <li data-filter=".filter-Samen" class="btn btn-outline-primary mx-2">Samen</li>
         </ul>
       </div>
     </div>
 
     <div class="row projecten" data-aos="fade-up" data-aos-delay="100">
       <!-- Project Item 1 -->
-      <div class="col-lg-4 col-md-6 projecten-item filter-allen">
+      <div class="col-lg-4 col-md-6 projecten-item filter-Allen">
         <div class="projecten-wrap">
           <img src="assets/img/dice.png" class="img-fluid" alt="">
           <div class="projecten-links">
             <a href="assets/img/dice1.png" data-gallery="projectenGallery" class="projecten-lightbox" title="hoger lager"><i class="bi bi-plus"></i></a>
-            <a href="projecten-details.html" title="More Details"><i class="bi bi-link"></i></a>
+            <a href="details.html" title="More Details"><i class="bi bi-link"></i></a>
           </div>
         </div>
       </div>
 
       <!-- Project Item 2 -->
-      <div class="col-lg-4 col-md-6 projecten-item filter-samen">
+      <div class="col-lg-4 col-md-6 projecten-item filter-Samen">
         <div class="projecten-wrap">
           <img src="assets/img/escaperoom.png" class="img-fluid" alt="">
           <div class="projecten-links">
             <a href="assets/img/escaperoom.png" data-gallery="projectenGallery" class="projecten-lightbox" title="escaperoom"><i class="bi bi-plus"></i></a>
-            <a href="projecten-details.html" title="More Details"><i class="bi bi-link"></i></a>
+            <a href="details.html" title="More Details"><i class="bi bi-link"></i></a>
           </div>
         </div>
       </div>
 
   <!-- Project Item 4 -->
-      <div class="col-lg-4 col-md-6 projecten-item filter-allen">
+      <div class="col-lg-4 col-md-6 projecten-item filter-Allen">
         <div class="projecten-wrap">
           <img src="assets/img/chatgpt.png" class="img-fluid" alt="">
           <div class="projecten-links">
             <a href="assets/img/chatgpt.png" data-gallery="projectenGallery" class="projecten-lightbox" title="Chatgbt"><i class="bi bi-plus"></i></a>
-            <a href="projecten-details.html" title="More Details"><i class="bi bi-link"></i></a>
+            <a href="details.html" title="More Details"><i class="bi bi-link"></i></a>
           </div>
         </div>
       </div>
 
       <!-- Project Item 3 -->
-      <div class="col-lg-4 col-md-6 projecten-item filter-allen">
+      <div class="col-lg-4 col-md-6 projecten-item filter-Allen">
         <div class="projecten-wrap">
           <img src="assets/img/minigames.png" class="img-fluid" alt="">
           <div class="projecten-links">
             <a href="assets/img/zeeslag.png" data-gallery="projectenGallery" class="projecten-lightbox" title="zeeslag"><i class="bi bi-plus"></i></a>
-            <a href="projecten-details.html" title="More Details"><i class="bi bi-link"></i></a>
+            <a href="details.html" title="More Details"><i class="bi bi-link"></i></a>
           </div>
         </div>
       </div>
@@ -319,45 +320,45 @@
     
 
       <!-- Project Item 5 -->
-      <div class="col-lg-4 col-md-6 projecten-item filter-samen">
+      <div class="col-lg-4 col-md-6 projecten-item filter-Samen">
         <div class="projecten-wrap">
           <img src="assets/img/web.png" class="img-fluid" alt="">
           <div class="projecten-links">
             <a href="assets/img/website.png" data-gallery="projectenGallery" class="projecten-lightbox" title="webcatalogus"><i class="bi bi-plus"></i></a>
-            <a href="projecten-details.html" title="More Details"><i class="bi bi-link"></i></a>
+            <a href="details.html" title="More Details"><i class="bi bi-link"></i></a>
           </div>
         </div>
       </div>
 
       <!-- Project Item 6 -->
-      <div class="col-lg-4 col-md-6 projecten-item filter-allen">
+      <div class="col-lg-4 col-md-6 projecten-item filter-Allen">
         <div class="projecten-wrap">
           <img src="assets/img/sonic.png" class="img-fluid" alt="">
           <div class="projecten-links">
             <a href="assets/img/sonic.png" data-gallery="projectenGallery" class="projecten-lightbox" title="Sonic"><i class="bi bi-plus"></i></a>
-            <a href="projecten-details.html" title="More Details"><i class="bi bi-link"></i></a>
+            <a href="details.html" title="More Details"><i class="bi bi-link"></i></a>
           </div>
         </div>
       </div>
 
       <!-- Project Item 7 -->
-      <div class="col-lg-4 col-md-6 projecten-item filter-samen">
+      <div class="col-lg-4 col-md-6 projecten-item filter-Samen">
         <div class="projecten-wrap">
-          <img src="assets/img/" class="img-fluid" alt="">
+          <img src="assets/img/dashboard.png" class="img-fluid" alt="">
           <div class="projecten-links">
-            <a href="assets/img/" data-gallery="projectenGallery" class="projecten-lightbox" title="Dashboard"><i class="bi bi-plus"></i></a>
-            <a href="projecten-details.html" title="More Details"><i class="bi bi-link"></i></a>
+            <a href="assets/img/dashboard.png" data-gallery="projectenGallery" class="projecten-lightbox" title="Dashboard"><i class="bi bi-plus"></i></a>
+            <a href="details.html" title="More Details"><i class="bi bi-link"></i></a>
           </div>
         </div>
       </div>
 
       <!-- Project Item 8 -->
-      <div class="col-lg-4 col-md-6 projecten-item filter-samen">
+      <div class="col-lg-4 col-md-6 projecten-item filter-Samen">
         <div class="projecten-wrap">
           <img src="assets/img/Fireburst.png" class="img-fluid" alt="">
           <div class="projecten-links">
-            <a href="assets/img/foto.png" data-gallery="projectenGallery" class="projecten-lightbox" title="Fireburst"><i class="bi bi-plus"></i></a>
-            <a href="projecten-details.html" title="More Details"><i class="bi bi-link"></i></a>
+            <a href="assets/img/Fireburst.png" data-gallery="projectenGallery" class="projecten-lightbox" title="Fireburst"><i class="bi bi-plus"></i></a>
+            <a href="details.html" title="More Details"><i class="bi bi-link"></i></a>
           </div>
         </div>
       </div>
@@ -366,9 +367,6 @@
 </section>
 
 <!-- End projecten Section -->
-
-
-
 
       <section id="OpleidingenEnStage" class="stage py-5">
         <div class="container">
@@ -454,42 +452,6 @@
 
         </div>
       </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
       <section id="contact" class="container mt-5">
         <div class="contact-inner">

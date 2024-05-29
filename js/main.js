@@ -86,3 +86,47 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
+
+
+// projecten filteren 
+
+window.onload = function() {
+  const filterButtons = document.querySelectorAll('#projecten-flters li');
+  const projectItems = document.querySelectorAll('.projecten-item');
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Remove active class from all buttons
+      filterButtons.forEach(btn => btn.classList.remove('filter-active'));
+      // Add active class to the clicked button
+      button.classList.add('filter-active');
+      
+      const filterValue = button.getAttribute('data-filter');
+
+      // Show/Hide items based on filter
+      projectItems.forEach(item => {
+        if (filterValue === '*' || item.classList.contains(filterValue.substring(1))) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+};
+
+document.addEventListener('DOMContentLoaded', function() {
+  const typed = document.querySelector('.typed');
+  if (typed) {
+    let typed_strings = typed.getAttribute('data-typed-items');
+    typed_strings = typed_strings.split(',');
+    new Typed('.typed', {
+      strings: typed_strings,
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 50,
+      backDelay: 2000
+    });
+  }
+});
+

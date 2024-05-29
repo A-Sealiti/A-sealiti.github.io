@@ -60,115 +60,51 @@
     letter-spacing: 1px;
     border-bottom: 3px solid #149ddd;
   }
-  
-  @media (min-width: 1024px) {
-    #hero {
-      background-attachment: fixed;
-    }
+  .custom-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #040b14;
+    color: #fff;
+    padding: 20px;
+    overflow: auto;
   }
   
-  @media (max-width: 768px) {
-    #hero h1 {
-      font-size: 28px;
-      line-height: 36px;
-    }
-  
-    #hero h2 {
-      font-size: 18px;
-      line-height: 24px;
-      margin-bottom: 30px;
-    }
-  }
-
-
   .custom-sidebar .profile img {
-    width: 100%; 
-    margin-bottom: 15px; 
+    width: 100%;
+    margin-bottom: 15px;
   }
   
   .custom-sidebar .social-links a {
-    margin: 0 10px; 
-    color: #495057; 
-  }
-  
-   .custom-sidebar .social-links a:hover {
-    color: #007bff;
-  }
-  
-  .custom-sidebar .nav-link {
-    font-size: 1.1rem; 
-    margin: 10px 0; 
-    color: #495057; 
-  }
-  
- .custom-sidebar .social-links a {
     font-size: 20px;
     display: inline-block;
     background: #212431;
     color: #fff;
-    line-height: 1;
+    line-height: 22px;
     padding: 6px 0;
-    margin-right: 2px;
+    margin: 0 5px; 
     border-radius: 50%;
     text-align: center;
     width: 32px;
     height: 32px;
     transition: 0.3s;
-    
   }
-
-  .custom-sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background-color: #343a40; 
-    color: white;
-    padding: 20px;
-    overflow-y: auto;
+  
+  .custom-sidebar .social-links a:hover {
+    background: #149ddd;
   }
   
   .custom-sidebar .nav-link {
-    color: rgb(40, 39, 39);
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: #495057;
   }
   
   .custom-sidebar .nav-link:hover {
-    color: #f6f3ec; 
+    color: #f6f3ec;
   }
   
- 
-  .offset-md-3 {
-    margin-left: 25%;
-  }
-  
-  .offset-lg-2 {
-    margin-left: 16%;
-  }
-  
-  .custom-sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background-color: #343a40; 
-    color: white;
-    padding: 20px;
-    background: #040b14;
-    overflow-y: auto;
-    color: #fff;
-    overflow-x: auto;
-  } 
-
-.custom-sidebar .social-links a:hover {
-    background: #149ddd;
-    color: #fff;
-    text-decoration: none;
-  } 
-    .custom-sidebar .social-links a:hover {
-      background: #149ddd;
-      color: #fff;
-      text-decoration: none;
-    } 
 /* Mobile Navigation */
 .mobile-nav-toggle {
   position: fixed;
