@@ -282,30 +282,6 @@
   .projecten .projecten-item {
     margin-bottom: 30px;
   }
-/*   
-    /* .projecten #projecten-flters {
-      padding: 0;
-      margin: 0 auto 35px auto;
-      list-style: none;
-      text-align: center;
-      background: #fff;
-      border-radius: 50px;
-      padding: 2px 15px;
-    } */
-    
-    /* .projecten #projecten-flters li {
-      cursor: pointer;
-      display: inline-block;
-      padding: 10px 15px 8px 15px;
-      font-size: 14px;
-      font-weight: 600;
-      line-height: 1;
-      text-transform: uppercase;
-      color: #272829;
-      margin-bottom: 5px;
-      transition: all 0.3s ease-in-out;
-    }
-    */ */
   .projecten #projecten-flters li:hover,
   .projecten #projecten-flters li.filter-active {
     color: #149ddd;
@@ -379,14 +355,14 @@
 
   .projecten-item .projecten-wrap {
     position: relative;
-    overflow: hidden; /
+    overflow: hidden; 
   }
   
-  .projecten-item .projecten-wrap img {
+  /* .projecten-item .projecten-wrap img {
     width: 100%; 
     height: 100%; 
     object-fit: cover; 
-  }
+  } */
   
   
 
