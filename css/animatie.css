@@ -129,4 +129,12 @@ perspective-origin: 50% 50%;
     50% { transform: translateY(-10px); }
     100% { transform: translateY(0); }
   }
+  @media screen and (max-width: 768px) {
+    .oog {
+      width: 200px; 
+      height: 200px; 
+      margin:50px ; 
+      
+    }
+  }
   
