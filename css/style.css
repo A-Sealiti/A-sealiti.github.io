@@ -50,8 +50,8 @@
   top: 0;
   left: 0;
   height: 100%;
-  background-color: #040b14;
-  color: #fff;
+  background-color: #192536;
+  color: #464444;
   padding: 20px;
   overflow: auto;
 }
@@ -70,7 +70,7 @@
   padding: 6px 0;
   margin: 0 5px;
   border-radius: 50%;
-  text-align: center;
+  text-align: center; 
   width: 32px;
   height: 32px;
   transition: 0.3s;
@@ -83,18 +83,18 @@
 .custom-sidebar .nav-link {
   font-size: 1.1rem;
   margin: 10px 0;
-  color: #495057;
+  color: #f8fbff;
 }
 
 .custom-sidebar .nav-link:hover {
-  color: #f6f3ec;
+  color: #a0a59f;
 }
 
 /* Mobile Navigation */
 .mobile-nav-toggle {
   position: fixed;
-  right: 15px;
-  top: 15px;
+  left: 15px; 
+  top: 5px;
   z-index: 9998;
   border: 0;
   font-size: 24px;
@@ -147,7 +147,7 @@
 .nav-menu a:focus {
   display: flex;
   align-items: center;
-  color: #a8a9b4;
+  color: #239cc8;
   padding: 12px 15px;
   margin-bottom: 8px;
   transition: 0.3s;
