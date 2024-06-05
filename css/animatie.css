@@ -119,7 +119,7 @@ perspective-origin: 50% 50%;
 
 
   .btn {
-    animation-name: bounce;
+    animation-name:bounce;
     animation-duration: 1s;
     animation-iteration-count: infinite;
   }
@@ -138,3 +138,4 @@ perspective-origin: 50% 50%;
     }
   }
   
+
