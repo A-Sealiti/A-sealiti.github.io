@@ -155,45 +155,7 @@
   color: #149ddd;
 }
 
-  #footer {
-    padding: 15px;
-    color: #f4f6fd;
-    font-size: 14px;
-    position: relative;
-    left: 0;
-    bottom: 0;
-    width: 280px;
-    z-index: 9999;
-    background: #040b14;
-  }
 
-  #footer .copyright {
-    text-align: center;
-  }
-
-  #footer .credits {
-    padding-top: 5px;
-    text-align: center;
-    font-size: 13px;
-    color: #eaebf0;
-  }
-
-  @media (max-width: 1199px) {
-    #footer {
-      position: static;
-      width: auto;
-      padding-right: 10px 15px;
-      bottom: 0px;
-    }
-  }
-
-  @media (max-width: 576px) {
-    .small-img {
-      max-width: 200px; 
-      height: 300px;
-    }
-  }
-  
 .stage .stage-item,
 .Werkervaring .Werkervaring-item {
   padding: 0 0 20px 20px;
