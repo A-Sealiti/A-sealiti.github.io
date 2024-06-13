@@ -60,12 +60,11 @@
               aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-
-
           </nav>
 
 
           <nav class="mt-4 nav-menu ">
+            <div id="navbar-collapse" class="collapse"></div>
             <ul class="nav flex-column text-center">
               <li class="nav-item">
                 <a href="#hero" class="nav-link scrollto "><i class="bi bi-house-door"></i> Home</a>
@@ -93,7 +92,7 @@
       </div>
     </div>
   </header>
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center text-light">
+  <div id="hero" class="d-flex flex-column justify-content-center align-items-center text-light">
     <div class="hero-container" data-aos="fade-in">
       <p class="mb-2 display-4 fw-bold text-white fs-1">Abdel~sealiti</p>
       <p class="fs-3">
@@ -101,7 +100,7 @@
           data-typed-items="Developer, IT Medewerker, Student"></span>
       </p>
     </div>
-  </section>
+  </div>
   <main class="container-fluid">
     <div class="col-md-9 col-lg-10 offset-md-3 offset-lg-2">
 
@@ -123,12 +122,12 @@
               <img src="img/foto.png" class="img-fluid Profile" alt="Profile Image">
             </div>
             <div class="col-lg-4" data-aos="fade-up">
-              <section class="oog">
+              <div class="oog">
                 <figure class="ball">
                   <span class="shadow"></span>
                   <span class="iris"></span>
                 </figure>
-              </section>
+              </div>
             </div>
             <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left"><br>
               <h3>Mijn passie</h3>
@@ -552,18 +551,18 @@
               </div>
               <div class="row mt-3">
                 <div class="col-md-6">
-                  <iframe
+                  <iframe class="location"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1458.5977551317333!2d4.291623381955606!3d52.06044484399392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b6cd5fda007f%3A0x34ab02fbfc91e8e4!2sDen%20Haag%2C%20Schalk%20Burgerstraat!5e0!3m2!1snl!2snl!4v1715846337009!5m2!1snl!2snl"
-                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="col-md-6">
-                  <form action="https://formspree.io/f/mzbnlbnw" method="post" role="form" class="email-form">
+                </div> <br>
+                <div class="col-md-6 mt-4">
+                  <form action="https://formspree.io/f/mzbnlbnw" method="post" class="email-form">
                     <div class="form-group">
                       <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group mt-3">
-                      <input type="email" class="form-control" name="email" id="email" placeholder="Namw@exampel.com"
+                      <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com"
                         required>
                     </div>
                     <div class="form-group mt-3">
