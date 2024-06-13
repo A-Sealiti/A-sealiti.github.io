@@ -118,12 +118,12 @@ perspective-origin: 50% 50%;
   }
 
 
-  .btn {
+  /* .btn {
     animation-name:bounce;
     animation-duration: 1s;
     animation-iteration-count: infinite;
   }
-  
+   */
   @keyframes bounce {
     0% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
