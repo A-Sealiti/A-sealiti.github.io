@@ -58,7 +58,7 @@ const Experience = () => {
     },
     {
       id: 1,
-      title: "Stagier Assistent installatie & constructietechniek",
+      title: "Stagiair Assistent installatie & constructietechniek",
       company: "4 star Windows",
       period: "2020 - 2021",
       location: "Den Haag",
