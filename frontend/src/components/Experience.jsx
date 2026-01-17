@@ -24,7 +24,7 @@ const Experience = () => {
       title: "IT Medewerker",
       company: "That's It! V.O.F.",
       period: "2022 - Heden",
-      location: "Wateringen, Den Haag",
+      location: "Wateringen",
       description: "Als IT Medewerker ben ik verantwoordelijk voor het ondersteunen van de IT-infrastructuur en het bieden van technische ondersteuning aan klanten. Mijn taken omvatten het oplossen van technische problemen, het installeren en configureren van software en hardware.",
       achievements: [
         "Oplossen van technische problemen en IT-ondersteuning",

@@ -82,8 +82,8 @@ const Projects = () => {
       image: "/img/escaperoom.png",
       technologies: ["HTML", "CSS", "JavaScript", "Puzzle Logic"],
       category: "frontend",
-      liveUrl: "https://a-sealiti.github.io/Escaproom/",
-      githubUrl: "https://github.com/A-Sealiti/Escaproom",
+      liveUrl: "https://a-sealiti.github.io/EscapeRoom/",
+      githubUrl: "https://github.com/A-Sealiti/EscapeRoom",
       featured: false,
       stats: { views: "350", stars: "4", forks: "1" },
       requiresSetup: false
